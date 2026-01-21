@@ -1,0 +1,47 @@
+<!-- 2.  Create a html page to design  Student Information Form to collect student details.
+						Requirements:
+									Full Name
+									Date of Birth
+									Gender (radio buttons)
+									Course (dropdown)
+									Address (textarea)
+									Submit & Reset buttons	 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+</head>
+<body>
+    <h2>Student Information Form</h2>
+    <form>
+        Full Name:
+        <input type="text" name="fullname">
+        <br><br>
+        Date of Birth:
+        <input type="date" name="dob">
+        <br><br>
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+        <br><br>
+        Course:
+        <select name="course">
+            <option value="">--Select Course--</option>
+            <option value="CSE">Computer Science</option>
+            <option value="ECE">Electronics & Communication</option>
+            <option value="ME">Mechanical</option>
+            <option value="CE">Civil</option>
+        </select>
+        <br><br>
+        Address:
+        <br>
+        <textarea name="address" rows="4" cols="40"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
