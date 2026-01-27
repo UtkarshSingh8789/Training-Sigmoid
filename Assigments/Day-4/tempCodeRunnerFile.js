@@ -1,0 +1,10 @@
+function showMessage(message,callback){
+//     setTimeout(()=>{
+//         console.log(message);
+//         callback();
+//     },2000)
+// }
+// showMessage("Loading...",()=>{
+//     console.log("Finished")
+// })
+// showMessage("Hello");

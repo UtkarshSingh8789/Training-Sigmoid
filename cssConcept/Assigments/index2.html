@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide and Show with Media Queries</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .hamburger {
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .menu {
+            display: block;
+        }
+
+        .hamburger {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            .menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">MyLogo</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="hamburger">☰</div>
+    </div>
+
+</body>
+</html>

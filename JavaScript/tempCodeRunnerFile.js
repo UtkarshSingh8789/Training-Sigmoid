@@ -1,9 +1,5 @@
-console.log("Start");
-// function asyncFun(){
-//     console.log("hello coder");
-//     setTimeout(()=>{
-//         console.log("Printing")
-//     },2000)
-// }
-// asyncFun()
-// console.log("End");
+const ages=[3,18,10,20]
+// let val=ages.findIndex((x)=>{
+//     return x==18;
+// })
+// console.log(val)
