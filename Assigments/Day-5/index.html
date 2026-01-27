@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+<body>
+    <h2>Student Details</h2>
+    <label>Student ID: </label>
+    <input type="text" id="studentID"> <br> <br>
+    <label>Student Name </label>
+    <input type="text" id="studentName"> <br> <br>
+    <label>Skill Set: </label>
+    <input type="text" id="skillSet"> <br> <br>
+    <button onclick="addStudent()">Add Student</button>
+    <br> <br>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Skill Set</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody"> 
+        <!-- table body here we will add content of table; -->
+        </tbody>
+    </table>
+    <script src="logic.js"></script>
+</body>
+</html>
