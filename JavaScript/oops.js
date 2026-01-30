@@ -13,7 +13,7 @@ student.study();
 
 class Student{
     name
-    roll_Number
+    roll_Number // no key word is used in initializing variable in js class;
     constructor(name,roll){
         this.name=name;
         this.roll_Number=roll

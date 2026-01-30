@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo</title>
+</head>
+<body>
+    <button onclick=getTodo()>Get Todo's</button>
+    <ul id="todo-list"></ul>
+    <br>
+    <a href="index1.html">Add Todo's</a>
+    <script>
+        function getTodo(){
+            let todoObj = localStorage.getItem("todo")
+            let todolist = JSON.parse(todoObj)
+
+            for(todo of todolist){
+                let liObj = document.getElementById("todo-list")
+                let li = document.createElement("li");
+                li.innerText = todo
+                liObj.appendChild(li)
+            }
+        }
+    </script>
+</body>
+</html>

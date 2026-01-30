@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+<body>
+    <button onclick=f1()>setItem</button>
+    <button onclick=f2()>getItem</button>
+    <script>
+        function f1(){
+            let product={name:"choclate",id:2,price:50}
+            let str=JSON.stringify(product)
+            localStorage.setItem("productData",str)
+            console.log(str)
+            alert("Product data Stured in local storage")
+        }
+        function f2(){
+            let result=localStorage.getItem("productData")
+            console.log(JSON.parse(result))
+        }
+    </script>
+</body>
+</html>

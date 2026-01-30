@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Add New ToDo</h3>
+    <input type="text" id="todoInput" placeholder="Enter your todo...">
+    <button onclick=storeTodo()>Save ToDo</button>
+    <br>
+    <a href="showTodo.html">View all Todo's</a>
+
+    <script>
+        let arr = JSON.parse(localStorage.getItem("todo")) || [] ;
+        function storeTodo(){
+            let todo = document.getElementById("todoInput").value;
+            console.log(todo)
+            arr.push(todo)
+            console.log(arr)
+            let content = JSON.stringify(arr)
+            localStorage.setItem("todo", content);
+        }
+    </script>
+</body>
+</html>
