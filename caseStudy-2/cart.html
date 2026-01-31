@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Your Cart</h1>
+  <div id="cartContainer"></div>
+  <div id="cartSummary"></div>
+  <a href="index.html">Back to Products</a>
+  <script>
+    const cart=JSON.parse(localStorage.getItem("cart")) || []; // we will get the card product from localStorage 
+    const container=document.getElementById("cartContainer");
+    if(cart.length===0){
+        container.innerHTML="<p>Your cart is empty</p>";
+    } else {
+        cart.forEach((p) => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+                <h3>${p.title}</h3>
+                <img src="${p.images[0]}" />
+                <p>₹${p.price}</p>
+            `;
+            container.appendChild(card);
+        });
+    }
+    const totalItems = cart.length;
+    const totalPrice = cart.reduce((acc, p) => acc + p.price, 0); // it is used to convert array into single value;
+    document.getElementById("cartSummary").innerHTML = `
+        <p>Total Items: ${totalItems}</p>
+        <p>Total Price: ₹${totalPrice}</p>
+    `;
+  </script>
+</body>
+</html>
