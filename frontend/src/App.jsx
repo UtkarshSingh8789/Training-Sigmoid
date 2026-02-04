@@ -1,12 +1,12 @@
 import PostComponent from "./component/post.jsx";
 import { useEffect, useState } from "react";
 import LinkedinBar from "./component/LinkedinBar.jsx";
-import Product from "./component/Assigment-1/Product.jsx";
 import Counter from "./component/Day-8/classComponent.jsx";
 import Clock from "./component/Day-8/Clock.jsx";
 import Focus from "./component/useRef-Hook/Focus.jsx";
 import Previous from "./component/useRef-Hook/Previous.jsx";
 import Routing from "./Routing/example.jsx";
+import Product from "./component/axios/Product.jsx";
 // export default function App(){
 //   const [posts,setPosts]=useState([]) // it returns an array with current state and function to update the state
 //   const postComponents=posts.map((post)=>{
@@ -104,7 +104,8 @@ export default function App(){
     <div>
       {/* <Counter username="utkarsh" initialScore={50}/> */}
       {/* <Clock/> */}
-      <Routing/>
+      {/* <Routing/> */}
+      <Product/>
     </div>
   )
 }
