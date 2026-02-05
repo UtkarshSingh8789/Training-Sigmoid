@@ -7,6 +7,7 @@ import Focus from "./component/useRef-Hook/Focus.jsx";
 import Previous from "./component/useRef-Hook/Previous.jsx";
 import Routing from "./Routing/example.jsx";
 import Product from "./component/axios/Product.jsx";
+import DeptList from "./Redux/components/DeptList.jsx";
 // export default function App(){
 //   const [posts,setPosts]=useState([]) // it returns an array with current state and function to update the state
 //   const postComponents=posts.map((post)=>{
@@ -105,7 +106,7 @@ export default function App(){
       {/* <Counter username="utkarsh" initialScore={50}/> */}
       {/* <Clock/> */}
       {/* <Routing/> */}
-      <Product/>
+      <DeptList/>
     </div>
   )
 }
